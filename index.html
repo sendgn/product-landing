@@ -5,13 +5,177 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Green Hill - доставка рационов здорового питания</title>
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <title>Green Hill - Онлайн-ресторан вегетарианской кухни</title>
   </head>
   <body>
-    <header id="header" class="">
-      <img src="img/logo.png" alt="Green Hill Logo" class="logo" />
-      <nav id="navbar" class="navbar"></nav>
+    <!-- Header -->
+    <header class="header" id="header">
+      <img
+        class="header__img"
+        id="header-img"
+        src="img/logo.png"
+        alt="Логотип Green Hill"
+      />
+      <nav class="header__nav" id="nav-bar">
+        <!-- TODO: rename according to BEM notation after FFC check -->
+        <ul class="nav-list">
+          <li class="nav-link"><a href="#section-menu">Меню</a></li>
+          <li class="nav-link"><a href="#section-delivery">Доставка</a></li>
+          <li class="nav-link"><a href="#section-subscribe">Контакты</a></li>
+        </ul>
+      </nav>
     </header>
-    <main class="main"></main>
+
+    <!-- Main content -->
+    <main>
+      <!-- Hero section -->
+      <section class="section-hero">
+        <div class="section-hero__description">
+          <h1>Онлайн-ресторан вегетарианской кухни</h1>
+          <p>
+            Сбалансированное правильное питание из свежих и натуральных
+            продуктов на каждый день
+          </p>
+          <a href="#" class="btn">Посмотреть меню</a>
+        </div>
+        <video class="section-hero__video" id="video" autoplay loop>
+          <source src="img/video.mp4" type="video/mp4" />
+          <source src="img/video.webm" type="video/webm" />
+          Ваш браузер не поддерживает произведение данного видео!
+        </video>
+      </section>
+
+      <!-- Features section -->
+      <section class="section-features">
+        <div class="section-features__group">
+          <img src="/img/salad.png" alt="Салат из свежих продуктов" />
+          <h2>Свежие продукты</h2>
+          <p>Для приготовления блюд мы отбираем только свежие продукты</p>
+        </div>
+        <div class="section-features__group">
+          <img src="/img/hands.png" alt="Дезинфекция" />
+          <h2>Стандарты чистоты</h2>
+          <p>
+            Место для приготовления блюд соответствует всем стандартам чистоты
+          </p>
+        </div>
+        <div class="section-features__group">
+          <img src="/img/clock.png" alt="Часы" />
+          <h2>Быстрая доставка</h2>
+          <p>Быстрая доставка до двери позволяет вам получить свежие блюда</p>
+        </div>
+      </section>
+
+      <!-- Menu section -->
+      <section class="section-menu" id="section-menu">
+        <div class="section-menu__card">
+          <img src="img/first.jpg" alt="Суп" />
+          <h3>Первые блюда</h3>
+          <p>от 200 &#8381;</p>
+          <a href="#" class="btn">Открыть меню</a>
+        </div>
+        <div class="section-menu__card">
+          <img src="img/second.jpg" alt="Цельнозерновые макароны с овощами" />
+          <h3>Вторые блюда</h3>
+          <p>от 300 &#8381;</p>
+          <a href="#" class="btn">Открыть меню</a>
+        </div>
+        <div class="section-menu__card">
+          <img src="img/dessert.jpg" alt="Шоколадный кейк" />
+          <h3>Десерт</h3>
+          <p>от 100 &#8381;</p>
+          <a href="#" class="btn">Открыть меню</a>
+        </div>
+      </section>
+
+      <!-- Delivery section -->
+      <section class="section-delivery" id="section-delivery">
+        <div class="section-delivery__group">
+          <h2>1</h2>
+          <p>Сделайте заказ на сайте или в приложении</p>
+        </div>
+        <div class="section-delivery__group">
+          <h2>2</h2>
+          <p>Внесите необходимые данные для оформления заказа</p>
+        </div>
+        <div class="section-delivery__group">
+          <h2>3</h2>
+          <p>Заказ можно оплатить картой или с помощью электронного кошелбка</p>
+        </div>
+        <div class="section-delivery__group">
+          <h2>4</h2>
+          <p>Доставка осуществляется бесплатно в течение двух часов</p>
+        </div>
+      </section>
+
+      <!-- Subscription section -->
+      <section class="section-subscribe" id="section-subscribe">
+        <h3>Подпишитесь и получите книгу с рецептами в подарок</h3>
+        <p>
+          Своевременно получайте самые последние новости об акциях и новинках
+          нашего ресторана
+        </p>
+        <form>
+          <label for="email"></label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="youremail@gmail.com"
+          />
+          <button type="submit">Получить подарок</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div class="footer__group">
+        <img src="/img/logo.png" alt="Логотип Green Hill" />
+        <p>2021 &copy; Все права защищены build by Alexander Polozhenskii</p>
+        <div class="footer__social">
+          <a href="https://www.instagram.com/" target="_blank"
+            ><img src="/img/instagram.png" alt="Instagram logo"
+          /></a>
+          <a href="https://www.facebook.com/" target="_blank"
+            ><img src="/img/facebook.png" alt="Facebook logo"
+          /></a>
+          <a href="https://twitter.com/" target="_blank"
+            ><img src="/img/twitter.png" alt="Twitter logo"
+          /></a>
+        </div>
+      </div>
+      <div class="footer__group">
+        <h4>Компания</h4>
+        <ul>
+          <li><a href="#section-menu">Меню</a></li>
+          <li><a href="#section-delivery">Доставка</a></li>
+          <li><a href="#section-subscribe">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="footer__group">
+        <h4>Меню</h4>
+        <ul>
+          <li><a href="#section-menu">Первые блюда</a></li>
+          <li><a href="#section-menu">Вторые блюда</a></li>
+          <li><a href="#section-menu">Десерты</a></li>
+        </ul>
+      </div>
+      <div class="footer__group">
+        <h4>Помощь</h4>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Поддержка</a></li>
+          <li><a href="#">Документы</a></li>
+        </ul>
+      </div>
+      <div class="footer__group">
+        <h4>Контакты</h4>
+        <ul>
+          <li><a href="#">+7 (960) 243-24-24</a></li>
+          <li><a href="#"></a>support@greenhill.ru</li>
+          <li><a href="#">г.Санкт-Петербург, Петергофское ш. 50</a></li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
