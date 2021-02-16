@@ -242,3 +242,63 @@ ul {
   display: flex;
   align-items: center;
 }
+
+/* Subscription section */
+.section-subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-primary);
+  margin: 25rem 20rem;
+  padding: 4rem;
+  border-radius: 3rem;
+}
+
+.section-subscribe h3 {
+  text-align: center;
+}
+
+.section-subscribe p {
+  font-size: 1.9rem;
+  text-align: center;
+  width: 80%;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+}
+
+.section-subscribe form {
+  display: grid;
+  grid-template-columns: 6fr 1fr;
+  width: 70%;
+}
+
+.section-subscribe input,
+.section-subscribe button {
+  font-family: inherit;
+  font-size: inherit;
+  border: 2px solid transparent;
+  padding: 1.5rem 3rem;
+  transition: all 0.2s ease-in;
+}
+
+.section-subscribe input {
+  border-radius: 6rem;
+}
+
+.section-subscribe button {
+  margin-left: -100%;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.section-subscribe input:focus,
+.section-subscribe button:focus {
+  outline: none;
+  border-color: rgba(249, 193, 50, 0.4);
+}
+
+.section-subscribe input:focus + button {
+  border-top-color: rgba(249, 193, 50, 0.4);
+  border-right-color: rgba(249, 193, 50, 0.4);
+  border-bottom-color: rgba(249, 193, 50, 0.4);
+}
