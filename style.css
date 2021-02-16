@@ -102,7 +102,7 @@ ul {
 }
 
 .nav-list li:not(:last-child) {
-  margin-right: 2rem;
+  margin-right: 4rem;
 }
 
 .nav-link {
@@ -208,4 +208,37 @@ ul {
 
 .section-menu__card .btn {
   align-self: center;
+}
+
+/* Delivery section */
+.section-delivery__content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 4rem;
+}
+
+.section-delivery__group {
+  position: relative;
+}
+
+.section-delivery__group h4 {
+  font-size: 14rem;
+  font-weight: 800;
+  color: var(--color-secondary);
+  margin-left: 3rem;
+}
+
+.section-delivery__group p {
+  position: absolute;
+  height: 14rem;
+  font-size: 2.2rem;
+  font-weight: 400;
+  text-align: center;
+  background-color: #b5e18b;
+  padding: 2rem;
+  margin-top: -8.4rem;
+  border-radius: 4rem;
+
+  display: flex;
+  align-items: center;
 }
